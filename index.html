@@ -9,89 +9,131 @@
 body{
     margin:0;
     padding:0;
-    background:#f5f5f5;
-    font-family:Arial, sans-serif;
+    background:#f2f5f9;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.topbar{
+    background:#7a0019;
+    color:white;
+    padding:18px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
 .container{
     width:90%;
-    max-width:900px;
+    max-width:1100px;
     margin:40px auto;
-    background:#fff;
-    padding:30px;
+    background:white;
     border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+    overflow:hidden;
 }
 
-h1{
-    color:#b30000;
+.header{
+    background:#b5121b;
+    color:white;
+    padding:20px;
     text-align:center;
+}
+
+.header h1{
+    margin:0;
+    font-size:32px;
 }
 
 .verify-box{
+    padding:30px;
     text-align:center;
-    margin-top:30px;
 }
 
 .verify-box h2{
     color:#222;
+    margin-bottom:10px;
 }
 
-.info{
-    margin-top:20px;
-    line-height:2;
+.verify-box p{
+    color:#666;
     font-size:18px;
 }
 
-.btn{
+.certificate{
+    width:95%;
+    height:700px;
+    border:none;
+    margin:20px auto;
+    display:block;
+}
+
+.footer{
+    background:#111;
+    color:#bbb;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+
+.badge{
     display:inline-block;
-    margin-top:30px;
-    padding:14px 25px;
-    background:#b30000;
+    padding:8px 18px;
+    background:#0a8f08;
     color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-size:18px;
+    border-radius:30px;
+    margin-top:15px;
+    font-weight:bold;
 }
 
-.btn:hover{
-    background:#8a0000;
+.code{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#b5121b;
 }
 </style>
-</head>
 
+</head>
 <body>
+
+<div class="topbar">
+NPTEL ONLINE CERTIFICATION
+</div>
 
 <div class="container">
 
-<h1>NPTEL ONLINE CERTIFICATION</h1>
+<div class="header">
+<h1>Certificate Verification</h1>
+</div>
 
 <div class="verify-box">
 
-<h2>Certificate Verification</h2>
+<h2>Successfully Verified</h2>
 
-<div class="info">
+<p>
+The following certificate has been verified successfully from the NPTEL database.
+</p>
 
-<b>Name:</b> VIJAY KUMAR MANDAL<br>
+<div class="badge">
+Verified Certificate
+</div>
 
-<b>Course:</b> Soft Skill Development<br>
-
-<b>Score:</b> 64%<br>
-
-<b>Roll No:</b> NPTEL26HS54S553900609<br>
-
-<b>Session:</b> Jan-Mar 2026<br>
-
-<b>Course Duration:</b> 8 Week Course<br>
-
-<b>Credits Recommended:</b> 3<br>
+<div class="code">
+NOC26HS54S5539006090383218
+</div>
 
 </div>
 
-<a class="btn" href="NOC26HS54S5539006090383218.pdf" target="_blank">
-View Certificate PDF
-</a>
+<!-- PDF VIEW -->
 
+<iframe 
+class="certificate"
+src="NOC26HS54S5539006090383218.pdf">
+</iframe>
+
+<div class="footer">
+© NPTEL Online Certification Course
 </div>
 
 </div>
