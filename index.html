@@ -11,7 +11,6 @@
 :root{
     --bg:#f1f3f4;
     --text:#202124;
-    --pdf:#d6d6d6;
     --btn:#1a73e8;
 }
 
@@ -20,8 +19,6 @@
 :root{
     --bg:#202124;
     --text:#e8eaed;
-    --pdf:#3a3b3c;
-    --btn:#1a73e8;
 }
 
 }
@@ -30,6 +27,7 @@ body{
     margin:0;
     padding:0;
     background:var(--bg);
+
     font-family:Arial,sans-serif;
 
     display:flex;
@@ -43,70 +41,36 @@ body{
     text-align:center;
 }
 
-/* REALISTIC PDF ICON */
+/* EXACT LIGHT PDF ICON */
 
 .pdf-icon{
 
-    width:42px;
-    height:50px;
+    width:54px;
+    height:54px;
 
     margin:auto;
 
-    background:var(--pdf);
+    border-radius:8px;
 
-    border-radius:4px;
+    background:#d9d9d9;
 
-    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    box-shadow:0 1px 2px rgba(0,0,0,0.08);
-}
+    color:#f5f5f5;
 
-/* TOP CORNER FOLD */
-
-.pdf-icon::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    right:0;
-
-    width:10px;
-    height:10px;
-
-    background:rgba(255,255,255,0.35);
-
-    clip-path:polygon(0 0,100% 0,100% 100%);
-}
-
-/* PDF TEXT */
-
-.pdf-icon::after{
-
-    content:"PDF";
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    color:rgba(255,255,255,0.65);
-
-    font-size:9px;
-
+    font-size:18px;
     font-weight:bold;
 
-    letter-spacing:0.5px;
+    letter-spacing:1px;
 }
 
 /* FILE NAME */
 
 .filename{
 
-    margin-top:16px;
+    margin-top:18px;
 
     color:var(--text);
 
@@ -121,15 +85,15 @@ body{
 
     margin-top:16px;
 
-    padding:14px 100px;
+    padding:14px 105px;
 
-    background:var(--btn);
+    border-radius:30px;
+
+    background:#1a73e8;
 
     color:white;
 
     text-decoration:none;
-
-    border-radius:30px;
 
     font-size:15px;
 
@@ -143,7 +107,9 @@ body{
 
 <div class="container">
 
-<div class="pdf-icon"></div>
+<div class="pdf-icon">
+PDF
+</div>
 
 <div class="filename">
 NOC26HS54S5539006090383218.pdf
