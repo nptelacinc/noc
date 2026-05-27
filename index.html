@@ -12,6 +12,7 @@
     --bg:#f1f3f4;
     --text:#202124;
     --btn:#1a73e8;
+    --pdf:#d9d9d9;
 }
 
 @media (prefers-color-scheme: dark){
@@ -19,13 +20,16 @@
 :root{
     --bg:#202124;
     --text:#e8eaed;
+    --pdf:#3b3b3b;
 }
 
 }
 
 body{
+
     margin:0;
     padding:0;
+
     background:var(--bg);
 
     font-family:Arial,sans-serif;
@@ -41,7 +45,7 @@ body{
     text-align:center;
 }
 
-/* EXACT LIGHT PDF ICON */
+/* PDF ICON */
 
 .pdf-icon{
 
@@ -52,18 +56,28 @@ body{
 
     border-radius:8px;
 
-    background:#d9d9d9;
+    background:var(--pdf);
 
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+/* PDF TEXT */
+
+.pdf-icon span{
+
+    font-family:sans-serif;
+
+    font-size:18px;
+
+    font-weight:700;
 
     color:#f5f5f5;
 
-    font-size:18px;
-    font-weight:bold;
-
     letter-spacing:1px;
+
+    transform:scaleY(1.05);
 }
 
 /* FILE NAME */
@@ -75,9 +89,11 @@ body{
     color:var(--text);
 
     font-size:14px;
+
+    letter-spacing:0.2px;
 }
 
-/* BUTTON */
+/* OPEN BUTTON */
 
 .open-btn{
 
@@ -89,7 +105,7 @@ body{
 
     border-radius:30px;
 
-    background:#1a73e8;
+    background:var(--btn);
 
     color:white;
 
@@ -108,7 +124,7 @@ body{
 <div class="container">
 
 <div class="pdf-icon">
-PDF
+<span>PDF</span>
 </div>
 
 <div class="filename">
