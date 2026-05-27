@@ -1,54 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>NPTEL Certificate Verification</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NPTEL Certificate</title>
+
 <style>
+
+:root{
+    --bg:#f1f3f4;
+    --text:#202124;
+    --btn:#1a73e8;
+    --pdf:#d9d9d9;
+}
+
+@media (prefers-color-scheme: dark){
+
+:root{
+    --bg:#202124;
+    --text:#e8eaed;
+    --pdf:#3b3b3b;
+}
+
+}
+
 body{
-font-family:Arial;
-text-align:center;
-background:#f5f5f5;
-padding-top:100px;
+
+    margin:0;
+    padding:0;
+
+    background:var(--bg);
+
+    font-family:Arial,sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
 }
-.box{
-background:white;
-width:500px;
-margin:auto;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+.container{
+    text-align:center;
 }
-button{
-padding:15px 30px;
-font-size:18px;
-background:#8b0000;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
+
+/* PDF ICON */
+
+.pdf-icon{
+
+    width:54px;
+    height:54px;
+
+    margin:auto;
+
+    border-radius:8px;
+
+    background:var(--pdf);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
+
+/* PDF TEXT */
+
+.pdf-icon span{
+
+    font-family:sans-serif;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#f5f5f5;
+
+    letter-spacing:1px;
+
+    transform:scaleY(1.05);
+}
+
+/* FILE NAME */
+
+.filename{
+
+    margin-top:18px;
+
+    color:var(--text);
+
+    font-size:14px;
+
+    letter-spacing:0.2px;
+}
+
+/* OPEN BUTTON */
+
+.open-btn{
+
+    display:inline-block;
+
+    margin-top:16px;
+
+    padding:14px 105px;
+
+    border-radius:30px;
+
+    background:var(--btn);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-<h1>NPTEL Certificate Verification</h1>
+<div class="pdf-icon">
+<span>PDF</span>
+</div>
 
-<p>
-Certificate Successfully Verified
-</p>
+<div class="filename">
+NOC26HS54S5539001940326023.pdf
+</div>
 
-<p>
-Certificate ID:
-NOC26HS54S55390019403264023
-</p>
+<a 
+class="open-btn"
+href="NOC26HS54S5539001940326033.pdf"
+target="_blank">
 
-<a href="NOC26HS54S55390019403264023.pdf" target="_blank">
-
-<button>
-View Certificate
-</button>
+Open
 
 </a>
 
