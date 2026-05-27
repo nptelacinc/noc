@@ -9,21 +9,19 @@
 <style>
 
 :root{
-    --bg:#ffffff;
-    --text:#111111;
-    --box:#f3f3f3;
-    --border:#dcdcdc;
-    --button:#8ab4f8;
+    --bg:#f1f3f4;
+    --text:#202124;
+    --pdf:#d9d9d9;
+    --btn:#1a73e8;
 }
 
 @media (prefers-color-scheme: dark){
 
 :root{
     --bg:#202124;
-    --text:#dcdcdc;
-    --box:#2a2a2a;
-    --border:#333333;
-    --button:#8ab4f8;
+    --text:#e8eaed;
+    --pdf:#3a3b3c;
+    --btn:#1a73e8;
 }
 
 }
@@ -32,13 +30,13 @@ body{
     margin:0;
     padding:0;
     background:var(--bg);
-    color:var(--text);
     font-family:Arial,sans-serif;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     height:100vh;
-    transition:0.3s;
 }
 
 .container{
@@ -48,42 +46,60 @@ body{
 /* PDF ICON */
 
 .pdf-icon{
-    width:58px;
-    height:58px;
+
+    width:52px;
+    height:52px;
+
     margin:auto;
-    border-radius:8px;
-    background:var(--box);
-    border:1px solid var(--border);
+
+    border-radius:6px;
+
+    background:var(--pdf);
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    color:#666;
+    color:#ffffff90;
+
     font-size:11px;
     font-weight:bold;
 }
 
-/* CERTIFICATE NUMBER */
+/* FILE NAME */
 
-.certificate-id{
-    margin-top:14px;
-    font-size:14px;
+.filename{
+
+    margin-top:18px;
+
     color:var(--text);
+
+    font-size:14px;
+
+    letter-spacing:0.2px;
 }
 
 /* OPEN BUTTON */
 
 .open-btn{
+
     display:inline-block;
-    margin-top:12px;
-    padding:8px 24px;
-    border-radius:20px;
-    background:var(--button);
-    color:#111;
+
+    margin-top:16px;
+
+    background:var(--btn);
+
+    color:white;
+
     text-decoration:none;
-    font-size:14px;
-    font-weight:500;
+
+    padding:14px 95px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
 }
 
 </style>
@@ -97,7 +113,7 @@ body{
 PDF
 </div>
 
-<div class="certificate-id">
+<div class="filename">
 NOC26HS54S5539006090383218.pdf
 </div>
 
